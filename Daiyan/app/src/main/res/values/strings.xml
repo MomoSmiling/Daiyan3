@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Daiyan</string>
+    <string name="title_home">盐厂</string>
+    <string name="title_message">盐罐</string>
+    <string name="title_search">找盐</string>
+    <string name="title_user">我</string>
+</resources>
