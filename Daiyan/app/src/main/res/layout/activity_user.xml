@@ -1,27 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.daiyan.momoliu.daiyan.Me.UserActivity">
 
-    <TextView
-        android:id="@+id/follow1"
-        android:layout_width="wrap_content"
+    <fragment
+        android:id="@+id/basicInfo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:name="com.daiyan.momoliu.daiyan.Me.BasicInfoFragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.daiyan.momoliu.daiyan.Me.NumbersFragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyInUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:name="com.daiyan.momoliu.daiyan.Me.HistoryFragment">
+
+    </fragment>
+
+    <Button
+        android:id="@+id/recommendationForYou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
         android:padding="10dp"
-        android:layout_marginLeft="10dp"
-        android:text="我是一袋盐"/>
-
-    <!--<EditText-->
-        <!--android:id="@+id/editText"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:ems="10"-->
-        <!--android:inputType="textPersonName"-->
-        <!--android:text="简介：我是可爱的宝宝猪，我的朋友……"/>-->
+        android:textSize="18dp"
+        android:text="为你推荐" />
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

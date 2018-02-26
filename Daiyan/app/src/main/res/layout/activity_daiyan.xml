@@ -13,22 +13,25 @@
         android:id="@+id/headline"
         android:layout_width="match_parent"
         android:layout_height="43dp"
-        android:name="com.daiyan.momoliu.daiyan.HomePage.HeadlineBarFragment"
-        ></fragment>
+        android:name="com.daiyan.momoliu.daiyan.HomePage.HeadlineBarFragment">
+
+    </fragment>
 
     <fragment
         android:id="@+id/topRolingTag"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:name="com.daiyan.momoliu.daiyan.HomePage.TopRollingTagFragment"
-        ></fragment>
+        android:name="com.daiyan.momoliu.daiyan.HomePage.TopRollingTagFragment">
+
+    </fragment>
 
     <fragment
         android:id="@+id/moments"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:name="com.daiyan.momoliu.daiyan.HomePage.MomentsFragment"
-        ></fragment>
+        android:name="com.daiyan.momoliu.daiyan.HomePage.MomentsFragment">
+
+    </fragment>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
