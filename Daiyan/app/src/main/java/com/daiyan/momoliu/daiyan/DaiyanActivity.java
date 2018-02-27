@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.daiyan.momoliu.daiyan.HomePage.MomentsFragment;
 import com.daiyan.momoliu.daiyan.Me.UserActivity;
+import com.daiyan.momoliu.daiyan.PostMomentsPage.PostMomentsActivity;
 
 public class DaiyanActivity extends AppCompatActivity {
 
@@ -29,7 +30,8 @@ public class DaiyanActivity extends AppCompatActivity {
                     mTextMessage.setText(R.string.title_message);
                     return true;
                 case R.id.navigation_post_a_message:
-                    mTextMessage.setText("Post a message");
+                    Intent postMoments = new Intent(DaiyanActivity.this, PostMomentsActivity.class);
+                    startActivity(postMoments);
                     return true;
                 case R.id.navigation_search:
                     mTextMessage.setText("找盐");

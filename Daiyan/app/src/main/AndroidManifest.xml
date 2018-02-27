@@ -11,16 +11,20 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".DaiyanActivity"
-            android:onClick="onClick"
             android:clickable="true"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:onClick="onClick">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Me.UserActivity"></activity>
+        <activity android:name=".Me.UserActivity" />
+        <activity
+            android:name=".PostMomentsPage.PostMomentsActivity"
+            android:label="@string/title_activity_post_moments"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
