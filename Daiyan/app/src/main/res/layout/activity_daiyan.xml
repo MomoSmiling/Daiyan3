@@ -30,7 +30,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:name="com.daiyan.momoliu.daiyan.HomePage.MomentsFragment">
-
     </fragment>
 
     <android.support.design.widget.BottomNavigationView

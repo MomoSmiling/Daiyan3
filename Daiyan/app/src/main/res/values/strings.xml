@@ -5,8 +5,77 @@
     <string name="title_search">找盐</string>
     <string name="title_user">我</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_user">UserActivity</string>
     <string name="title_activity_post_moments">PostMomentsActivity</string>
+
+    <string-array name="Tags1">
+        <item>可口可乐1</item>
+        <item>受欢迎1</item>
+        <item>碳酸饮料1</item>
+    </string-array>
+
+    <array name="pics">
+        <item>@drawable/imagesample</item>
+        <item>@drawable/imagesample</item>
+        <item>@drawable/imagesample</item>
+        <item>@drawable/imagesample</item>
+    </array>
+
+    <string-array name="Tags2">
+        <item>可口可乐2</item>
+        <item>受欢迎2</item>
+        <item>碳酸饮料2</item>
+    </string-array>
+
+    <string-array name="Tags3">
+        <item>可口可乐3</item>
+        <item>受欢迎3</item>
+        <item>碳酸饮料3</item>
+    </string-array>
+
+
+    <!--><-->
+    <!-- Names -->
+    <string-array name="Member_names">
+        <item>Robert</item>
+        <item>Shanni</item>
+        <item>Rachael</item>
+        <item>Maddy</item>
+        <item>Kate</item>
+        <item>Nikhil</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="profile_pics">
+        <item>@drawable/imagesample</item>
+        <item>@drawable/imagesample</item>
+        <item>@drawable/imagesample</item>
+        <item>@drawable/imagesample</item>
+        <item>@drawable/imagesample</item>
+        <item>@drawable/imagesample</item>
+    </array>
+
+    <!-- Status -->
+    <string-array name="statues">
+        <item>Blogging</item>
+        <item>Available</item>
+        <item>Busy</item>
+        <item>In a meeting</item>
+        <item>At work</item>
+        <item>At gym</item>
+    </string-array>
+
+    <!-- contact type -->
+    <string-array name="contactType">
+        <item>Mobile</item>
+        <item>Work</item>
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Mobile</item>
+    </string-array>
+
+
 </resources>
