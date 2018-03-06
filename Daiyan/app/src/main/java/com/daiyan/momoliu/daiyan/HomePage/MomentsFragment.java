@@ -3,6 +3,7 @@ package com.daiyan.momoliu.daiyan.HomePage;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,6 +25,7 @@ public class MomentsFragment extends Fragment implements OnItemClickListener{
     TypedArray profile_pics;
     String[] statues;
     String[] contactType;
+    int i = 0;
 
     List<MomentItem> momentItems;
     ListView mylistview;
@@ -82,8 +84,23 @@ public class MomentsFragment extends Fragment implements OnItemClickListener{
     public void onItemClick(AdapterView<?> parent, View view, int position,
                             long id) {
 
-        String member_name = momentItems.get(position).getMember_name();
-        Toast.makeText(getActivity(), "" + member_name,
-                Toast.LENGTH_SHORT).show();
+        //String member_name = momentItems.get(position).getMember_name();
+        i++;
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable(){
+            @Override
+            public void run(){
+                if(i == 1){
+                    Toast.makeText(getActivity(), "Single",
+                            Toast.LENGTH_SHORT).show();
+                }else if(i == 2){
+                    Toast.makeText(getActivity(), "Double",
+                            Toast.LENGTH_SHORT).show();
+                }
+
+                i = 0;
+            }
+        }, 500);
+
     }
 }
