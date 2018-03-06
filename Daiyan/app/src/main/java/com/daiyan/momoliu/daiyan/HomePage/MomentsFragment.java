@@ -21,9 +21,9 @@ import java.util.List;
 
 public class MomentsFragment extends Fragment implements OnItemClickListener{
 
-    String[] member_names;
+//    String[] member_names;
     TypedArray profile_pics;
-    String[] statues;
+//    String[] statues;
     String[] contactType;
     int i = 0;
 
@@ -37,17 +37,17 @@ public class MomentsFragment extends Fragment implements OnItemClickListener{
 
         momentItems = new ArrayList<MomentItem>();
 
-        member_names = view.getResources().getStringArray(R.array.Member_names);
+ //       member_names = view.getResources().getStringArray(R.array.Member_names);
 
         profile_pics = view.getResources().obtainTypedArray(R.array.profile_pics);
 
-        statues = view.getResources().getStringArray(R.array.statues);
+ //       statues = view.getResources().getStringArray(statues);
 
         contactType = view.getResources().getStringArray(R.array.contactType);
 
-        for (int i = 0; i < member_names.length; i++) {
-            MomentItem item = new MomentItem(member_names[i],
-                    profile_pics.getResourceId(i, -1), statues[i],
+        for (int i = 0; i < contactType.length; i++) {
+            MomentItem item = new MomentItem(
+                    profile_pics.getResourceId(i, -1),
                     contactType[i]);
             momentItems.add(item);
         }
@@ -57,24 +57,6 @@ public class MomentsFragment extends Fragment implements OnItemClickListener{
         mylistview.setAdapter(adapter);
 
         mylistview.setOnItemClickListener(this);
-
-//
-//
-//
-//        ArrayList pics = new ArrayList<Integer>();
-//       // SimpleAdapter adapter = new SimpleAdapter(getActivity(), pics, R.layout.single_moment, from, to);
-//       for(int i = 0; i < images.length; i++){
-//           pics.add(images[i]);
-//       }
-//
-//        ListView listview = (ListView)view.findViewById(R.id.momnentsList);
-//        ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(
-//                getActivity(),
-//                android.R.layout.simple_list_item_1,
-//                pics
-//        );
-//
-//        listview.setAdapter(listViewAdapter);
 
         // Inflate the layout for this fragment
         return view;

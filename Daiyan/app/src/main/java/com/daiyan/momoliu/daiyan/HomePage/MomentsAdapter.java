@@ -61,19 +61,19 @@ public class MomentsAdapter extends BaseAdapter {
             convertView = mInflater.inflate(R.layout.single_moment, null);
             holder = new ViewHolder();
 
-            holder.member_name = (TextView) convertView
-                    .findViewById(R.id.member_name);
+//            holder.member_name = (TextView) convertView
+//                    .findViewById(R.id.member_name);
             holder.profile_pic = (ImageView) convertView
                     .findViewById(R.id.profile_pic);
-            holder.status = (TextView) convertView.findViewById(R.id.status);
+//            holder.status = (TextView) convertView.findViewById(R.id.status);
             holder.contactType = (TextView) convertView
                     .findViewById(R.id.contact_type);
 
             MomentItem row_pos = rowItems.get(position);
 
             holder.profile_pic.setImageResource(row_pos.getProfile_pic_id());
-            holder.member_name.setText(row_pos.getMember_name());
-            holder.status.setText(row_pos.getStatus());
+//            holder.member_name.setText(row_pos.getMember_name());
+//            holder.status.setText(row_pos.getStatus());
             holder.contactType.setText(row_pos.getContactType());
 
             convertView.setTag(holder);
