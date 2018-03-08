@@ -24,7 +24,9 @@
         <activity
             android:name=".PostMomentsPage.PostMomentsActivity"
             android:label="@string/title_activity_post_moments"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Search.SearchActivity" />
+        <activity android:name=".Message.MessageActivity"></activity>
     </application>
 
 </manifest>

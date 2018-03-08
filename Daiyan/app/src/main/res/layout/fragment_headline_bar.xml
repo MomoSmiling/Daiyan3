@@ -8,6 +8,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="35dp"
         android:orientation="horizontal">
 
         <TextView
@@ -15,8 +18,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:padding="10dp"
-            android:layout_marginLeft="10dp"
+
+            android:layout_weight="1"
             android:textColor="#ffffff"
             android:text="关注"/>
 
@@ -25,7 +28,7 @@
             android:id="@+id/recommendation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:layout_weight="1"
             android:text="推荐"
             android:textColor="#ffffff"
             android:textSize="20dp" />
@@ -34,7 +37,7 @@
             android:id="@+id/recommendationTag1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:layout_weight="1"
             android:text="#煎饼果子"
             android:textColor="#ffffff"
             android:textSize="20dp" />
@@ -43,7 +46,8 @@
             android:id="@+id/recommendationTag2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+
+            android:layout_weight="1"
             android:text="#北京"
             android:textColor="#ffffff"
             android:textSize="20dp" />
