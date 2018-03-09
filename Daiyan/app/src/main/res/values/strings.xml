@@ -10,6 +10,8 @@
     <string name="title_activity_user">UserActivity</string>
     <string name="title_activity_post_moments">PostMomentsActivity</string>
 
+    <string name="go_back">&lt;</string>
+
     <string-array name="Tags1">
         <item>可口可乐1</item>
         <item>受欢迎1</item>

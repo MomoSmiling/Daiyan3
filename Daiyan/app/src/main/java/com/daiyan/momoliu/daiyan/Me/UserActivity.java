@@ -7,6 +7,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import com.daiyan.momoliu.daiyan.DaiyanActivity;
 import com.daiyan.momoliu.daiyan.Message.MessageActivity;
 import com.daiyan.momoliu.daiyan.PostMomentsPage.PostMomentsActivity;
 import com.daiyan.momoliu.daiyan.R;
@@ -22,7 +23,7 @@ public class UserActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    Intent homepage = new Intent(UserActivity.this, SearchActivity.class);
+                    Intent homepage = new Intent(UserActivity.this, DaiyanActivity.class);
                     startActivity(homepage);
                     return true;
                 case R.id.navigation_search:

@@ -1,6 +1,7 @@
 package com.daiyan.momoliu.daiyan.HomePage;
 
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,6 +14,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.daiyan.momoliu.daiyan.HomePage.MomentContent.MomentContentActivity;
 import com.daiyan.momoliu.daiyan.R;
 
 import java.util.ArrayList;
@@ -21,9 +23,7 @@ import java.util.List;
 
 public class MomentsFragment extends Fragment implements OnItemClickListener{
 
-//    String[] member_names;
     TypedArray profile_pics;
-//    String[] statues;
     String[] contactType;
     int i = 0;
 
@@ -37,11 +37,8 @@ public class MomentsFragment extends Fragment implements OnItemClickListener{
 
         momentItems = new ArrayList<MomentItem>();
 
- //       member_names = view.getResources().getStringArray(R.array.Member_names);
-
         profile_pics = view.getResources().obtainTypedArray(R.array.profile_pics);
 
- //       statues = view.getResources().getStringArray(statues);
 
         contactType = view.getResources().getStringArray(R.array.contactType);
 
@@ -66,7 +63,10 @@ public class MomentsFragment extends Fragment implements OnItemClickListener{
     public void onItemClick(AdapterView<?> parent, View view, int position,
                             long id) {
 
-        //String member_name = momentItems.get(position).getMember_name();
+        // get id of the selected moment and pass it to MomentContent Activity through intent
+        // will fix in the future
+
+        // String member_name = momentItems.get(position).getContactType();
         i++;
         Handler handler = new Handler();
         handler.postDelayed(new Runnable(){
@@ -75,6 +75,8 @@ public class MomentsFragment extends Fragment implements OnItemClickListener{
                 if(i == 1){
                     Toast.makeText(getActivity(), "Single",
                             Toast.LENGTH_SHORT).show();
+                    Intent momentContent = new Intent(getActivity(), MomentContentActivity.class);
+                    startActivity(momentContent);
                 }else if(i == 2){
                     Toast.makeText(getActivity(), "Double",
                             Toast.LENGTH_SHORT).show();

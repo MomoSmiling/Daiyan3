@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.daiyan.momoliu.daiyan.HomePage.MomentContent.MomentContentActivity">
+
+    <LinearLayout
+        android:id="@+id/momentContentHeadline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1">
+
+        <Button
+            android:id="@+id/goBackHomePage"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:textSize="35dp"
+            android:text="@string/go_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="正文"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="120dp"
+            android:layout_toRightOf="@+id/goBackHomePage"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/momentContentPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="desc"
+        android:paddingLeft="10dp"
+        android:src="@drawable/imagesample"
+        android:layout_below="@+id/momentContentHeadline"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/momentContentHeadline"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginTop="55dp" />
+
+    <LinearLayout
+        android:id="@+id/picExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/momentContentPic"
+
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/momentContentPic"
+        app:layout_constraintTop_toTopOf="@+id/momentContentPic">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片说明"
+            android:textSize="20dp"
+            android:layout_below="@id/momentContentPic"
+            android:layout_gravity="center_vertical"/>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+
